@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfólio - José Eduardo</title>
+  <link rel="stylesheet" href="portfolio.css">
+</head>
+<body>
+
+  <!-- ====== Cabeçalho ====== -->
+  <header>
+    <nav>
+      <ul>
+        <li><a href="#sobre">Sobre</a></li>
+        <li><a href="#projetos">Projetos</a></li>
+        <li><a href="#contato">Contato</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!-- ====== Sobre ====== -->
+    <section id="sobre">
+      <h1>José Eduardo</h1>
+      <img src="Imagens/Foto pessoal para o site.jpg" alt="Minha foto">
+      <p>Sou estudante de Análise e Desenvolvimento de Sistemas, apaixonado por tecnologia e desenvolvimento web.</p>
+    </section>
+
+    <!-- ====== Projetos ====== -->
+    <section id="projetos">
+      <h2>Meus Projetos</h2>
+      
+      <div class="cards">
+        <div class="card">
+          <h3>Projeto 1</h3>
+          <p>Projeto a fazer 1...</p>
+        </div>
+        
+        <div class="card">
+          <h3>Projeto 2</h3>
+          <p>Projeto a fazer 2...</p>
+        </div>
+
+        <div class="card">
+          <h3>Projeto 3</h3>
+          <p>Projeto a fazer 3...</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====== Contato ====== -->
+    <section id="contato">
+      <h2>Contato</h2>
+      <form action="contato.php" method="post" id="formContato">
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" placeholder="Digite seu nome" required>
+        
+        <label for="email">E-mail:</label>
+        <input type="email" id="email" placeholder="Digite seu email" required>
+        
+        <label for="mensagemInput">Mensagem:</label>
+        <textarea id="mensagemInput" placeholder="Escreva sua mensagem" required></textarea>
+        
+        <button type="submit">Enviar</button>
+        <button type="reset">Limpar</button>
+        
+      </form>
+      <p id="mensagem" role="alert" aria-live="polite"></p>
+    </section>
+  </main>
+
+  <!-- ====== Rodapé ======= -->
+  <footer>
+    <p>&copy 2025 José Eduardo. Todos os direitos reservados</p>  
+
+    <div id="imagens-f">
+      <div class="imagemf1">
+        <a href="https://www.instagram.com/sojekkj/" target="_blank">
+          <img src="Imagens/insta-img.png" alt="Simbolo do Instagram">
+        </a>
+      </div>
+
+      <div class="imagemf2">
+        <a href="https://github.com/JoseEduAS" target="_blank">
+          <img src="Imagens/github-img.png" alt="Simbolo do Github">
+        </a>
+      </div>
+    </div>
+  </footer>
+    <script src="script.js"></script>
+</body>
+</html>
